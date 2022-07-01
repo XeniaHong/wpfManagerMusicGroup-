@@ -1,0 +1,93 @@
+﻿<Page x:Class="WpfCursovaya.PagesManager.Members"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfCursovaya.PagesManager"
+      mc:Ignorable="d" 
+      Title="Members"
+      MinHeight="300" MinWidth="500" 
+      d:DesignHeight="460" d:DesignWidth="680"
+        Background="WhiteSmoke">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="162*"/>
+            <RowDefinition Height="38*"/>
+        </Grid.RowDefinitions>
+
+            <TextBox
+            x:Name="Search"
+            Grid.Row="0"
+            VerticalAlignment="Center"
+            Width="200" Height="25" Margin="405,5,68.6,3.6" RenderTransformOrigin="0.509,0.12" />
+            <Button
+            Grid.Row="0"
+            Height="25"
+            Width="60"
+            Click="Search_Click"
+            Content="Поиск" Margin="610,5,3.6,3.6"/>
+
+        <Grid Grid.Row="1" >
+            <ListView
+                x:Name="listMem"
+                VerticalAlignment="Top"
+                Loaded="list_Loaded"
+                >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Участник" 
+                                        DisplayMemberBinding="{Binding nickName}"></GridViewColumn>
+                        <GridViewColumn Header="Имя"
+                                        DisplayMemberBinding="{Binding name}"></GridViewColumn>
+                        <GridViewColumn Header="Фамилия"
+                                        DisplayMemberBinding="{Binding lastName}"></GridViewColumn>
+                        <GridViewColumn Header="Дата рождения"
+                                        DisplayMemberBinding="{Binding birth}"></GridViewColumn>
+                        <GridViewColumn Header="Вес"
+                                        DisplayMemberBinding="{Binding weight}"></GridViewColumn>
+                        <GridViewColumn Header="Рост"
+                                        DisplayMemberBinding="{Binding height}"></GridViewColumn>
+                        <GridViewColumn Header="Позиция"
+                                        DisplayMemberBinding="{Binding position}"></GridViewColumn>
+
+
+                    </GridView>
+                </ListView.View>
+
+            </ListView>
+        </Grid>
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="87*"/>
+                <ColumnDefinition Width="206*"/>
+                <ColumnDefinition Width="104*"/>
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Column="0"
+                VerticalAlignment="Center" HorizontalAlignment="Right"
+                Height="25"
+                x:Name="timeous"
+                
+                />
+            <Button
+                Grid.Column="1"
+                VerticalAlignment="Center" HorizontalAlignment="Right"  
+                Content="Отчет"                 
+                Width="50" Height="25" Click="Word_Click" />
+            <Button
+                Grid.Column="2"
+            VerticalAlignment="Center" HorizontalAlignment="Center"
+            Content="Редактировать участников" 
+              
+                 Width="160" Height="25" Click="Button_Click"             
+                >
+
+            </Button>
+        </Grid>
+
+    </Grid>
+</Page>
+ 
+

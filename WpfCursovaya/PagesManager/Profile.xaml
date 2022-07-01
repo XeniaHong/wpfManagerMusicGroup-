@@ -1,0 +1,93 @@
+﻿<Page x:Class="WpfCursovaya.PagesManager.Profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfCursovaya.PagesManager"
+      mc:Ignorable="d" 
+       Title="Profile"
+      MinHeight="300" MinWidth="500" 
+      d:DesignHeight="460" d:DesignWidth="680"
+      Background="WhiteSmoke"
+     >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="229*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="61*"/>
+                <RowDefinition Height="31*"/>
+            </Grid.RowDefinitions>
+            <Image
+                Grid.Row="0"
+                Source="/img/UserAvatar/avatar.png"
+                Width="150"/>
+            <Label 
+                Content="имя логина"
+                Grid.Row="1"
+                VerticalAlignment="Center" HorizontalAlignment="Center"
+                FontWeight="Black"
+                />
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="68*"/>
+                <ColumnDefinition Width="161*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Grid.Row="0"
+                Content="Логин"                
+                VerticalAlignment="Center" HorizontalAlignment="Center" 
+                FontWeight="Medium"
+                />            
+            <Label
+                Grid.Row="0" Grid.Column="1"
+                x:Name="UserName"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                />
+            
+            <Label
+                Grid.Row="1"
+                Content="Пароль"
+                VerticalAlignment="Center" HorizontalAlignment="Center"
+                FontWeight="Medium"/>
+            
+            <Label 
+                Grid.Row="1" Grid.Column="1"
+                x:Name="passUser"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                />
+
+            <Label
+                x:Name="id"
+                Grid.Column="0" Grid.Row="5"
+                Foreground="WhiteSmoke"
+                Content=""
+                
+                />
+            
+            <Button 
+                Grid.Column="1" Grid.Row="5"
+                Content="Редактировать профиль"
+                Click="Edit_click"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"/>
+        </Grid>
+    </Grid>
+</Page>
