@@ -18,6 +18,7 @@ this project was created for the final work at the end of the course
 ![image](https://user-images.githubusercontent.com/103255158/176882522-24afc556-a48e-49f9-aad3-4fdfec851cfe.png)
 ![image](https://user-images.githubusercontent.com/103255158/176883250-eaebcb8c-501c-4493-9abd-39752a8af4fa.png)
 
+Также во всех таблицах работает поиск
 
 
 Работа сделана в целях ознакомления, пожалуйста, не используйте мою работу для своих целях, продажи или сдачи проектов :)
