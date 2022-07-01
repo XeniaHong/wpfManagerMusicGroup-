@@ -11,6 +11,7 @@ this project was created for the final work at the end of the course
 ![image](https://user-images.githubusercontent.com/103255158/176882866-c7b6f0b0-bed9-4f2c-ba79-c134a60e5f8c.png)
 
 Также есть регистрация
+
 ![image](https://user-images.githubusercontent.com/103255158/176883428-ca3030ae-3e8c-42a3-a8ca-4d4cc9d42ed6.png)
 
 Все таблицы можно изменять: редактировать, удалять, добавлять, единственный минус нет проверки на пустые поля или неправильный ввод.
