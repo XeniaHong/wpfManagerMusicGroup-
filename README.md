@@ -1,3 +1,4 @@
+Не работает нужно установить entityFramework
 # wpfManagerMusicGroups
 this project was created for the final work at the end of the course
 
